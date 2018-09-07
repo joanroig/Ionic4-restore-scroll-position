@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor=" let item of items">
+      <!-- <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      {{item.title}} -->
+      <div slot="end">
+        {{item.note}}
+      </div>
+      <ion-button (click)="showDetail(item)" color="secondary">
+        Save position
+      </ion-button>
+      <ion-button routerLink="/detail" color="danger">
+        Don't save position
+      </ion-button>
+    </ion-card>
+  </ion-list>
+</ion-content>
