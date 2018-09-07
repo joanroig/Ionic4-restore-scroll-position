@@ -1,7 +1,11 @@
-# [Ionic4 beta] Restore scroll position
+# [Ionic 4 beta] Restore scroll position
 
 After returning to previous page in the lastest Ionic 4.0.0-beta.8, the page loses scroll position.
 This simple example saves the scroll position in the page, and after returning into it the scroll is restored. 
+
+<p align="center">
+  <img src ="https://i.imgur.com/l0ZsVP5.gif" />
+</p>
 
 ## Save scroll position
 
