@@ -4,7 +4,7 @@ After returning to previous page in the lastest Ionic 4.0.0-beta.8, the page los
 This simple example saves the scroll position in the page, and after returning into it the scroll is restored. 
 
 <p align="center">
-  <img src ="https://i.imgur.com/l0ZsVP5.gif" />
+  <img src ="https://i.imgur.com/p5nCrfM.gif" />
 </p>
 
 ## Save scroll position
