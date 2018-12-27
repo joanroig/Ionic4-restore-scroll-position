@@ -40,15 +40,16 @@ export class ListPage implements OnInit {
     // Restore scroll position
     this.content.scrollToPoint(0, this.scrollPosition);
   }
-
-  showDetail() {
-
-    // Save scroll position
+  
+  ionViewDidLeave(){
+     // Save scroll position
     this.content.getScrollElement().then(data => {
       console.log(data.scrollTop);
       this.scrollPosition = data.scrollTop;
     });
+  }
 
+  showDetail() {
     // this.router.navigateByUrl('/detail');
     this.navCtrl.navigateForward('/detail');
   }
